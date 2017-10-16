@@ -1,7 +1,7 @@
 {
   "name": "text-roll",
   "description": "the plugin to rolling the long text.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "razor",
   "private": false,
   "license": "MIT",

@@ -2,6 +2,8 @@
 
 > the vue plugin to rolling the long text.
 
+# Demo
+https://ockhamrazor.github.io/vue-text-roll/#/
 
 ## Installtion
 install npm adn use it as a vue plugin in your app
