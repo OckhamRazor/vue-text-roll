@@ -1,26 +1,26 @@
-# vue-text-roll
+# text-roll
 
-> the plugin to rolling the long text.
+> the vue plugin to rolling the long text.
 
 
 ## Installtion
 install npm adn use it as a vue plugin in your app
 ```bash
-npm install --save vue-text-roll
+npm install --save text-roll
 ```
 
 ## How to import
 ```javascript
 // amd or commonjs
-var VueTextRoll = require('vue-text-roll')
+var VueTextRoll = require('text-roll')
 Vue.use(VueTextRoll)
 
 // global component
-import VueTextRoll from 'vue-text-roll'
+import VueTextRoll from 'text-roll'
 Vue.use(VueTextRoll)
 
 // partial component
-import VueTextRoll from 'vue-text-roll'
+import {VueTextRoll} from 'text-roll'
 export default {
   // ...
   components: {
@@ -83,8 +83,10 @@ duration: {
 },
 // the content wrapper style
 wrapperStyle: {
-  type: [String, Object],
-  default: ''
+  type: Object,
+  default: () => {
+    return {}
+  }
 },
 // animation play speed
 speed: {
