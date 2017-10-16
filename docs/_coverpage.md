@@ -1,5 +1,5 @@
 
-# cut-text-roll <small>1.0.5</small>
+# vue-text-roll <small>1.0.2</small>
 
 
 > A component for showing the long text.
