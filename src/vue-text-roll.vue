@@ -73,8 +73,10 @@ export default {
       default: null
     },
     wrapperStyle: {
-      type: [Object],
-      default: {}
+      type: Object,
+      default: () => {
+        return {}
+      }
     },
     speed: {
       type: String,
@@ -154,7 +156,11 @@ export default {
 <style scoped>
 .roll-text-container {
   overflow: hidden;
-  display: flex;
+  display: -webkit-box; 
+  display: -moz-box; 
+  display:-webkit-flex;
+  display: -ms-flexbox;
+  display:flex;
 }
 .roll-text-content {
   display: inline-block;
