@@ -154,7 +154,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, ".roll-text-container[data-v-1f383254]{overflow:hidden;display:flex}.roll-text-content[data-v-1f383254]{display:inline-block;position:relative;white-space:nowrap;padding-right:0}.roll-text-content.rolling[data-v-1f383254]{animation-name:left-rolling-data-v-1f383254;animation-timing-function:linear;animation-iteration-count:infinite}@keyframes left-rolling-data-v-1f383254{to{transform:translateX(-100%)}}", ""]);
+exports.push([module.i, ".roll-text-container[data-v-1f383254]{overflow:hidden;display:-webkit-box;display:-moz-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.roll-text-content[data-v-1f383254]{display:inline-block;position:relative;white-space:nowrap;padding-right:0}.roll-text-content.rolling[data-v-1f383254]{animation-name:left-rolling-data-v-1f383254;animation-timing-function:linear;animation-iteration-count:infinite}@keyframes left-rolling-data-v-1f383254{to{transform:translateX(-100%)}}", ""]);
 
 // exports
 
@@ -664,8 +664,10 @@ module.exports = function normalizeComponent (
       default: null
     },
     wrapperStyle: {
-      type: [Object],
-      default: {}
+      type: Object,
+      default: function _default() {
+        return {};
+      }
     },
     speed: {
       type: String,
