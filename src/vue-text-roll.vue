@@ -116,7 +116,7 @@ export default {
       let _containerWidth = this.getWidth('roll-text-container')
       let _messageWidth = this.getWidth('roll-text-content')
 
-      let _isNeedToRoll = _containerWidth < (_messageWidth - this.gutter)
+      let _isNeedToRoll = _containerWidth < (_messageWidth + this.gutter)
       this.isNeedToRoll = _isNeedToRoll
 
       return _isNeedToRoll
