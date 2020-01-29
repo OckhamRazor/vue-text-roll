@@ -1,5 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 var PROD = (process.env.NODE_ENV === 'production')
 
 module.exports = {
@@ -32,9 +34,8 @@ module.exports = {
     ]
   },
   plugins: PROD ? [
-    new webpack.optimize.UglifyJsPlugin({
+    new UglifyJsPlugin({
       include: /\.min\.js$/,
-      minimize: true
     })
   ] : []
 }
